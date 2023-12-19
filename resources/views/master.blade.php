@@ -34,12 +34,12 @@
         </div>
         <!-- Spinner End -->
         <!-- Sidebar Start -->
-            @include('layout/sidebar')
+            @include('layout.sidebar')
         <!-- Sidebar End -->
         <!-- Content Start -->
         <div class="content">
             <!-- Navbar Start -->
-            @include('layout/nav')
+            @include('layout.nav')
             <!-- Navbar End -->
             <!-- Blank Start -->
             <div class="px-4 pt-4 container-fluid">
@@ -51,7 +51,7 @@
             </div>
             <!-- Blank End -->
             <!-- Footer Start -->
-            @include('layout/footer')
+            @include('layout.footer')
             <!-- Footer End -->
         </div>
         <!-- Content End -->

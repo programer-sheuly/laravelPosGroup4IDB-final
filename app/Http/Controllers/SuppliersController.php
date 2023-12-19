@@ -19,7 +19,7 @@ class SuppliersController extends Controller
      */
     public function create()
     {
-        return view('pages/Suppliers/addSuppliers');
+        return view('pages.Suppliers.addSuppliers');
     }
 
     /**
@@ -44,7 +44,7 @@ class SuppliersController extends Controller
     {
         $user = new Suppliers();
         $data['user'] = $user->get();
-        return view('pages/Suppliers/viewSuppliers', $data);
+        return view('pages.Suppliers.viewSuppliers', $data);
     }
 
     /**
@@ -54,7 +54,7 @@ class SuppliersController extends Controller
     {
         $user = new Suppliers();
         $data['user'] = $user->findorfail($id);
-        return view('pages/Suppliers/editSuppliers', $data);
+        return view('pages.Suppliers.editSuppliers', $data);
     }
 
     /**

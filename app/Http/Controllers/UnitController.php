@@ -19,7 +19,7 @@ class UnitController extends Controller
      */
     public function create()
     {
-        return view('pages/Units/addUnits');
+        return view('pages.Units.addUnits');
     }
 
     /**
@@ -41,7 +41,7 @@ class UnitController extends Controller
     {
         $user = new Units();
         $data['user'] = $user->get();
-        return view('pages/Units/viewUnits', $data);
+        return view('pages.Units.viewUnits', $data);
     }
 
     /**
@@ -51,7 +51,7 @@ class UnitController extends Controller
     {
         $user = new Units();
         $data['user'] = $user->findorfail($id);
-        return view('pages/Units/editUnits', $data);
+        return view('pages.Units.editUnits', $data);
     }
 
     /**

@@ -19,7 +19,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        return view('pages/Categories/addCategories');
+        return view('pages.Categories.addCategories');
     }
 
     /**
@@ -42,7 +42,7 @@ class CategoriesController extends Controller
     {
         $user = new Category();
         $data['user'] = $user->get();
-        return view('pages/Categories/viewCategories', $data);
+        return view('pages.Categories.viewCategories', $data);
     }
 
     /**
@@ -52,7 +52,7 @@ class CategoriesController extends Controller
     {
         $user = new Category();
         $data['user'] = $user->findorfail($id);
-        return view('pages/Categories/editCategories', $data);
+        return view('pages.Categories.editCategories', $data);
     }
 
     /**

@@ -19,7 +19,7 @@ class CustomersController extends Controller
      */
     public function create()
     {
-        return view('pages/Customers/addCustomers');
+        return view('pages.Customers.addCustomers');
     }
 
     /**
@@ -44,7 +44,7 @@ class CustomersController extends Controller
     {
         $user = new Customers();
         $data['user'] = $user->get();
-        return view('pages/Customers/viewCustomers', $data);
+        return view('pages.Customers.viewCustomers', $data);
     }
 
     /**
@@ -54,7 +54,7 @@ class CustomersController extends Controller
     {
         $user = new Customers();
         $data['user'] = $user->findorfail($id);
-        return view('pages/Customers/editCustomers', $data);
+        return view('pages.Customers.editCustomers', $data);
     }
 
     /**

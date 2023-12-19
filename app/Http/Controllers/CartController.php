@@ -144,7 +144,7 @@ class CartController extends Controller {
         // dd($customer->customer_name);
         // dd($contents);
 
-        return view('pages/salesorders/create-invoice', compact(['contents', 'customer']));
+        return view('pages.salesorders.create-invoice', compact(['contents', 'customer']));
 
     }
 

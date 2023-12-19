@@ -19,7 +19,7 @@ class BrandController extends Controller
      */
     public function create()
     {
-        return view('pages/Brands/addBrands');
+        return view('pages.Brands.addBrands');
     }
 
     /**
@@ -41,7 +41,7 @@ class BrandController extends Controller
     {
         $user = new Brand();
         $data['user'] = $user->get();
-        return view('pages/Brands/viewBrands', $data);
+        return view('pages.Brands.viewBrands', $data);
     }
 
     /**
@@ -51,7 +51,7 @@ class BrandController extends Controller
     {
         $user = new Brand();
         $data['user'] = $user->findorfail($id);
-        return view('pages/Brands/editBrands', $data);
+        return view('pages.Brands.editBrands', $data);
     }
 
     /**
